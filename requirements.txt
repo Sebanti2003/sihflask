@@ -1,7 +1,9 @@
 Flask==2.2.2
 werkzeug==2.3.5
-gunicorn==20.1.0
+gunicorn==20.1.0  # If still using Gunicorn
+waitress==3.0.0   # Add this if using Waitress
 torch==2.0.1
 opencv-python-headless==4.8.0.76
-ultralytics==8.0.1
+ultralytics==8.2.27  # Updated to a more recent version
 requests==2.31.0
+numpy<2  # Added to avoid NumPy 2.x issues
